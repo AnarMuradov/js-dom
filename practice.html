@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+<!-- 
+    <style>
+        .style {
+          display: none;
+        }
+        </style> -->
+  </head>
+  <body>
+    <form id="Change">
+        <input class="input1" type="text">
+        <input class="input2" type="text">
+      </form>
+      <button>Change</button>
+      <div class="div"></div>
+    
+
+
+    <!-- <button id="btn">click me</button> -->
+    <!-- <ul class="ul">
+      <li>Qusar</li>
+      <li>Las-vegas</li>
+      <li>Miami</li>
+    </ul> -->
+    <script>
+        const change =document.getElementById("Change")
+        const input1 =document.querySelector("#Change .input1")
+        const input2 =document.querySelector("#Change .input2")
+        const mydiv =document.querySelector(".div")
+        
+        const button=document.querySelector("button")
+        
+          button.addEventListener("click",function myf(){
+
+            mydiv.style.backgroundColor=input1.value
+            mydiv.style.width=input2.value
+            mydiv.style.height="300px"
+            mydiv.style.transition="500ms"
+           
+        })
+
+
+
+    //    const arr =document.querySelectorAll(".ul li")
+    //   for (let i = 0; i < arr.length; i++) {
+    //       arr[i].addEventListener("click",function myf(){
+    //        arr[i].remove()})
+    //   }
+
+      // const button=document.getElementById("btn")
+      // button.style.color="red"
+      // button.style.width="100px"
+      // button.style.height="100px"
+      // button.style.backgroundColor="black"
+      // button.style.borderRadius="50%"
+      // button.addEventListener("click",function myf() {
+      // const div =document.createElement("div")
+      // div.textContent=button.textContent
+      // document.body.append(div)
+
+      // })
+      // let body =document.querySelector("body")
+      // body.style.display="flex"
+      // body.style.gap="20px"
+      // body.style.border="1px solid black"
+      // body.style.width="300px"
+      // body.style.flexWrap="wrap"
+      // body.style.color="red"
+
+
+    </script>
+  </body>
+</html>

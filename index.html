@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="mydiv">Assalamu Aleykum</div>
+    <div id="mydiv2">Vaaleykuma Salam</div> -->
+    <div class="box"></div>
+    <ul class="lak">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <script>
+        const mydiv= document.getElementById("mydiv")
+        const mydiv2=document.querySelector("#mydiv2")
+        console.log(mydiv);
+        console.log(mydiv2);
+        const box =document.querySelector(".box")
+        box.textContent="salam"
+        console.log(box);
+        
+        const arr =document.querySelectorAll(".lak li")
+        for (let i = 0; i < arr.length; i++) {
+            
+            arr[i].textContent="salam"
+        }
+
+        const div =document.createElement("div")
+        div.textContent="SAGRAY LEZGIYAR"
+        box.append(div)
+    </script>
+    
+</body>
+</html>
